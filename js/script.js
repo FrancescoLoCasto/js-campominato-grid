@@ -8,18 +8,20 @@ const startElement = document.getElementById('playButton');
 const boxElement = document.getElementById('largeBox');
 const sectionMainElement = document.getElementById('sectionMain');
 
-
-function cubeCreation (){
-   const divCreateElement = document.createElement('div')
-   divCreateElement.classList.add('cube')
-   return divCreateElement
-}
-
-for (let i = 1; i <= 100; i++){
-   const newCube= cubeCreation ();
-   newCube.innerHTML = i;
-   boxElement.appendChild(newCube);
-}
-
 startElement.addEventListener('click', function(){
+   sectionMainElement.classList.toggle('resetCube')
+   
+   function cubeCreation (){
+      const divCreateElement = document.createElement('div')
+      divCreateElement.classList.add('cube')
+      return divCreateElement
+   }
+   
+   for (let i = 1; i <= 100; i++){
+      const newCube= cubeCreation ();
+      newCube.innerHTML = i;
+      boxElement.appendChild(newCube);
+   }
+
+   
 })
