@@ -20,3 +20,6 @@ for (let i = 1; i <= 100; i++){
    newCube.innerHTML = i;
    boxElement.appendChild(newCube);
 }
+
+startElement.addEventListener('click', function(){
+})
