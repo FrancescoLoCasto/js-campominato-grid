@@ -16,5 +16,7 @@ function cubeCreation (){
 }
 
 for (let i = 1; i <= 100; i++){
-   
+   const newCube= cubeCreation ();
+   newCube.innerHTML = i;
+   boxElement.appendChild(newCube);
 }
