@@ -6,4 +6,9 @@ Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzurro ed 
 
 const startElement = document.getElementById('playButton');
 const boxElement = document.getElementById('largeBox');
-const sectionMainElement = document.getElementById('section-main');
+const sectionMainElement = document.getElementById('sectionMain');
+
+
+function cubeCreation (){
+   
+}
